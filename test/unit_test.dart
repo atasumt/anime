@@ -65,9 +65,9 @@ var anime = AnimeData(
 void main() {
   group('AnimeBloc', () {
     late AnimeBloc animeBloc;
-    late MockAnimeSearchUseCase mockAnimeSearchUseCase;
-    late MockAnimeSeasonNowUseCase mockAnimeSeasonNowUseCase;
-    late MockAnimeCharacterUseCase mockAnimeCharacterUseCase;
+    late AnimeSearchUseCase mockAnimeSearchUseCase;
+    late AnimeSeasonNowUseCase mockAnimeSeasonNowUseCase;
+    late AnimeCharacterUseCase mockAnimeCharacterUseCase;
 
     setUp(() {
       mockAnimeSearchUseCase = MockAnimeSearchUseCase();
@@ -76,7 +76,7 @@ void main() {
       animeBloc = AnimeBloc(mockAnimeSearchUseCase, mockAnimeSeasonNowUseCase, mockAnimeCharacterUseCase);
     });
 
-    test('Initial state should be StateAnimeLoading', () {
+    test('Initial state should be StateAnimeLoadin', () {
       expect(animeBloc.state, StateAnimeLoading());
     });
 
