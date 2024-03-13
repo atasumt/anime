@@ -13,8 +13,11 @@
 
 Bu Flutter projesi, Anime karakterleri ile ilgili çeşitli görselleri görüntülemek için oluşturulmuştur. Proje, Clean Architecture prensipleriyle tasarlanmıştır ve Bloc mimarisi kullanılarak durum yönetimi sağlanmıştır.
 
-# Demo
-[![UyumSoft]](https://youtube.com/shorts/KLKxsX6VQ0U?feature=share)
+# Proje Yapısı
+    data: Veri katmanıyla ilgili işlemleri içerir.
+    domain: İş mantığı kurallarını ve modelleri içerir.
+    presentation: Kullanıcı arayüzü ve görünüm katmanını içerir.
+    core: Temel yardımcı işlevleri ve hizmetleri içerir.
 
 
 ## Kullanılan Araçlar
