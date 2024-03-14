@@ -1,4 +1,4 @@
-package com.canwar.jikanmoe
+package com.example.anime
 
 import io.flutter.embedding.android.FlutterActivity
 

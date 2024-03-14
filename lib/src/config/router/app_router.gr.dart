@@ -15,16 +15,22 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    AnimeNavigationRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AnimeNavigationScreen(),
-      );
-    },
     AnimeRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: AnimePage(),
+      );
+    },
+    MangaRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: MangaPage(),
+      );
+    },
+    AnimeNavigationRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const AnimeNavigationScreen(),
       );
     },
     DetailAnimeRoute.name: (routeData) {
@@ -59,27 +65,7 @@ abstract class _$AppRouter extends RootStackRouter {
         child: HomeScreen(key: args.key),
       );
     },
-    MangaRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: MangaPage(),
-      );
-    },
   };
-}
-
-/// generated route for
-/// [AnimeNavigationScreen]
-class AnimeNavigationRoute extends PageRouteInfo<void> {
-  const AnimeNavigationRoute({List<PageRouteInfo>? children})
-      : super(
-          AnimeNavigationRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'AnimeNavigationRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
@@ -92,6 +78,34 @@ class AnimeRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'AnimeRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [MangaPage]
+class MangaRoute extends PageRouteInfo<void> {
+  const MangaRoute({List<PageRouteInfo>? children})
+      : super(
+          MangaRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'MangaRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [AnimeNavigationScreen]
+class AnimeNavigationRoute extends PageRouteInfo<void> {
+  const AnimeNavigationRoute({List<PageRouteInfo>? children})
+      : super(
+          AnimeNavigationRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'AnimeNavigationRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -189,18 +203,4 @@ class HomeRouteArgs {
   String toString() {
     return 'HomeRouteArgs{key: $key}';
   }
-}
-
-/// generated route for
-/// [MangaPage]
-class MangaRoute extends PageRouteInfo<void> {
-  const MangaRoute({List<PageRouteInfo>? children})
-      : super(
-          MangaRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'MangaRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
 }
