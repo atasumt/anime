@@ -19,7 +19,7 @@ dependencies:
 
   # ui
   cupertino_icons: ^1.0.2
-  auto_route: ^7.8.3
+  auto_route: ^7.8.1
   flutter_native_splash: ^2.3.2
   carousel_slider: ^4.2.1
 
@@ -35,9 +35,7 @@ dependencies:
   # firebase
   firebase_core: ^2.4.1
   firebase_crashlytics: ^3.0.11
-  mockito: ^5.4.4
-  bloc_test: ^9.1.6
-
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -49,7 +47,8 @@ dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
 
   flutter_lints: ^2.0.0
-  test: ^1.24.3
+  test: any
+  mockito: 5.4.2
 
 flutter:
   uses-material-design: true
